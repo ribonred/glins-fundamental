@@ -1,13 +1,13 @@
 let namesAndHobbies = {
-    elie: "JavaScript",
-    matt: "jogging",
-    janey: "table building",
-    tim: "sailing"
+    'elie': "JavaScript",
+    'matt': "jogging",
+    'janey': "table building",
+    'tim': "sailing"
 }
-import google from "google-auth";
 
+export {namesAndHobbies}
 
-var token = google.buttonlogin()
-'auhsd7hy723h hahdiulhau;odhjoiawjedo'
-
+// module.exports ={
+//     namesAndHobbies
+// }
  

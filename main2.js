@@ -1,19 +1,13 @@
-// var myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
-// myFish.splice(1, 0, 'drum')
-// console.log(myFish)
-// const months = ['Jan', 'March', 'April', 'June'];
-// console.log(months.splice(1, 0, 'Feb'));
-// function suhuBahan(suhu){
-//     var ketentuan_suhu_min = 10
-//     var ketentuan_suhu_max = 15
-//     if(suhu < ketentuan_suhu_min){
-//         return 'Maaf suhu kurang'
-//     }else if(suhu > ketentuan_suhu_max){
-//         return 'Suhu berlebih'
-//     }else{
-//         return 'lanjut'
-//     }
-// }
+// import object/fungsi/variable dari file lain dengan require
+const objectsana = require('./case_four')
+// ini PR ini masih gagal.. ga tau kenapa
+// import {namesAndHobbies as objectsana} from './case_four.js'
+// import * from './case_four'
+
+
+// ini adalah object dari file case_four -> bisa di cek beneran di case_four.js
+console.log(objectsana)
+
 
 // // JSON javascript object notation
 var fungsi = function get_name(){
