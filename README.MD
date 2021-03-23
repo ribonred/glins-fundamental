@@ -3,8 +3,22 @@
 For each of the exercises below, assume you are starting with the following people array.
 
 let people = ["Greg", "Mary", "Devon", "James"];
-Using a loop, iterate through this array and console.log all of the people.
-Write the function to remove "Greg" from the array.
+Using a loop, iterate through this array and console.log all of the people. step pertama/problem pertama
+Write the function to remove "Greg" from the array. goal kecil dengan masalah2 kecil di dalam nya
+
+
+kasus kedua:
+kasus kedua A. bisa ga aq buat fungsi di javascript/ngerti g aq fungsi javascript bagaimana cara membuat fungsi di javascript
+kasus kedua B. bagaimana program tau di dalam array ada greg? google kondisional di javascript
+    kedua B 1. method apa yang cocok (for loop) > (filter array)
+kasus kedua C gimana cara ngilangin nya klo udah ketemu?
+
+
+
+
+
+
+
 Write the function to remove "James" from the array.
 Write the function to add "Matt" to the front of the array.
 Write the function to add your name to the end of the array.
