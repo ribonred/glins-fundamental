@@ -9,14 +9,6 @@ const semuaOrang = () => {
 };
 semuaOrang();
 
-// /* Cari orang menggunakan Filter*/
-// const checkPeople = (i) => {
-//     const newArr = orang.filter((e) => i.toUpperCase() !== e.toUpperCase());
-//     console.log(newArr, "<-- ini hapus Greg");
-// };
-
-// checkPeople("greg");
-
 /* Hapus Greg */
 people.shift();
 console.log(people, "<-- ini hapus Greg");
