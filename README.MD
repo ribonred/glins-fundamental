@@ -33,8 +33,8 @@ Create a new variable called withBob and set it equal to the people array concat
 
 Your goal in this case is to implement a difference function, which subtracts one list from another and returns the result.
 
-It should remove all values from list a, which are present in list b.
 
+It should remove all values from list a, which are present in list b.
 arrayDiff([1,2],[1]) output => [2]
 If a value is present in b, all of its occurrences must be removed from the other:
 
