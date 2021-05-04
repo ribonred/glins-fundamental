@@ -10,7 +10,7 @@ console.log(objectsana)
 
 
 // // JSON javascript object notation
-var fungsi = function get_name(){
+var fungsi = function get_name() {
     console.log('ini dari fungsi')
 }
 
@@ -27,23 +27,23 @@ object_kosong.ini_isinya = 'hati'
 // Orang.tas.unshift('batu bata')
 // var add = 0
 
-        
-        
-        
+
+
+
 var Orang = {
-    'key':'value' ,// string, int, array, object, array of object,fungsi, class
-    'name':'jono',
-    'umur':21,
-    'tas':[
+    'key': 'value',// string, int, array, object, array of object,fungsi, class
+    'name': 'jono',
+    'umur': 21,
+    'tas': [
         'hp',
         'dompet'
     ],
-    'jam_tangan':{
-        'merk':'Bata',
-        'warna':'item',
+    'jam_tangan': {
+        'merk': 'Bata',
+        'warna': 'item',
     },
-    'fungsi':fungsi,
-    'ini_object':object_kosong
+    'fungsi': fungsi,
+    'ini_object': object_kosong
 
 }
 console.log(Orang.ini_object)
