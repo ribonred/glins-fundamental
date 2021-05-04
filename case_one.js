@@ -1,43 +1,79 @@
-let people = ["Greg", "Mary", "Devon", "James"]; //  <= ini variabel
-// variabel people  menyimpan array
-// cara mengakses index di dalam array
-// tanda [] ini untuk memanggil index nomor berapa contoh  people[0] sama dengan Greg
-
-// console.log(people[0])
-
-// // kita mau loop yang ada di variable tersebut
-// const allPeople = () => {
-//         for (let i = 0; i < people.lenght; i++) { // i itu sama dengan nol, jika i kurang dari panjang index array, i akan bertambah
-//                 console.log(people[i]); // yang aku print di terminal itu i
-
-//         }
-// };
-
+let people = ["Greg", "Mary", "Devon", "James"];
 
 //Case_1 
 //tampil semua data
-const allOrang = () => {
-        for (let i = 0; i < people.length; i++) {
-                console.log(people[i]);
+const allOrang = (ao) => {
+        for (let i = 0; i < ao.length; i++) {
+                console.log(ao[i]);
         }
-}
-allOrang();
-
-
-//cari orang kemudian menggunakan filter
-const cariOrang = (o) => {
-        const allNew = people.filter((i) => o.toUpperCase() !== i.toUpperCase());
-        console.log(allNew);
 
 }
 
-cariOrang("greg");
+//Hapus Greg
+const hapusGreeg = (hg) => {
+        hg.shift();
+        console.log(people, "=====> ini hapus Greg");
 
-//menghapus Greed pada Array
-people.shift();
-console.log(people);
+}
+
+//Hapus James
+const hapusJames = (hj) => {
+        hj.pop();
+        console.log(people, "=====> ini hapus James");
+
+}
+
+const tambahMatt = (tm) => {
+        tm.unshift("Matt");
+        console.log(people, "=====> ini Tambah Matt");
+
+}
+
+const tambahNmae = (nM) => {
+        nM.push("Bagus");
+        console.log(people, "=====> ini Tambah Namaku");
+
+}
 
 
+const maryKeluar = (mk) => {
+        for (let i = 0; i < mk.length; i++) {
+                console.log(mk[i]);
+                if (mk[i] == 'Mary') {
+                        console.log(" Eittssss Stopp")
+                        break;
+                }
+        }
+
+}
+
+const makeCopy = (mC) => {
+        let potong = mC.slice(2, 4);
+        console.log(potong, " ======> hasil slice yaa");
+}
+
+const gantiMary = (gM) => {
+        gM.splice(1, 1, "indexOf");
+        console.log(people, " =======> hasil Ganti Mary")
+}
+
+const lokasi = (lO, nama) => {
+        console.log(lO.indexOf(nama), "======> hasil lokasi")
+}
 
 
+allOrang(people);
+hapusGreeg(people);
+hapusJames(people);
+tambahMatt(people);
+tambahNmae(people);
+maryKeluar(people);
+makeCopy(people);
+lokasi(people, "Mary");
+lokasi(people, "Foo");
 
+let orangs = ["Greg", "Mary", "Devon", "James"];
+orangs.splice(2, 1, "Elizabeth", "Artie");
+console.log(orangs, " ==========> hasil akhir")
+let tamBob = orangs.concat("Bob");
+console.log(tamBob, "============> bob berhasil di tambahkan");
