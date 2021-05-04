@@ -1,16 +1,23 @@
-let people  = ["Greg", "Mary", "Devon", "James"] //  <= ini variabel
-// variabel people  menyimpan array
-// cara mengakses index di dalam array
-// tanda [] ini untuk memanggil index nomor berapa contoh  people[0] sama dengan Greg
+let people = ["Greg", "Mary", "Devon", "James"];
 
-console.log(people[0])
-
-// kita mau loop yang ada di variable tersebut
-for (var i=0;i < people.lenght;i++){ // i itu sama dengan nol, jika i kurang dari panjang index array, i akan bertambah
-        console.log(i) // yang aku print di terminal itu i
+for (let i = 0; i < people.length; i++) {
+  console.log(people[i]);
 }
 
+// remove greg from the list
 
+const removeName = (name) => {
+  const x = people.filter((names) => names === name);
+  return x;
+};
 
+console.log(removeName("Greg"));
 
+// remove greg and return all the remaining
 
+for (let i = 0; i < people.length; i++) {
+  if (people[i] === "Greg") {
+    people.splice(i, 1);
+  }
+}
+console.log(people);
