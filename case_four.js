@@ -19,6 +19,8 @@ console.log(namesAndHobbies);
 //jika key nama dany ada maka tampilkan nama dan hobby
 if (namesAndHobbies.dany) {
   console.log(
-    `${Object.keys(namesAndHobbies)[4]} hobinya ${namesAndHobbies.dany}`
+    `${Object.keys(namesAndHobbies)[4]} hobinya ${
+      Object.values(namesAndHobbies)[4]
+    }`
   );
 }
