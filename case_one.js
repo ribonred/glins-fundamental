@@ -10,5 +10,3 @@ for (var i = 0; i < people.lenght; i++) {
   // i itu sama dengan nol, jika i kurang dari panjang index array, i akan bertambah
   console.log(i); // yang aku print di terminal itu i
 }
-
-//vegaveronica
