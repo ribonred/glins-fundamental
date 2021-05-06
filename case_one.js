@@ -27,7 +27,7 @@ let people = ["Greg", "Mary", "Devon", "James"]; //  <= ini variabel
 // x[length] = "Vega";
 // console.log(x);
 
-// Case 1 mary exit from loop *sala keknya
+//Case 1 mary exit from loop *sala keknya
 // const x = ["Matt", "Greg", "Mary", "Devon", "James", "Vega"];
 // console.log(x);
 // const index = x.indexOf("Mary");
@@ -37,7 +37,7 @@ let people = ["Greg", "Mary", "Devon", "James"]; //  <= ini variabel
 // console.log(x);
 
 // Case 1  not include mary or matt
-const x = ["Matt", "Greg", "Mary", "Devon", "James", "Vega"];
-console.log(x.slice(1, 6));
+// const x = ["Matt", "Greg", "Mary", "Devon", "James", "Vega"];
+// console.log(x.slice(1, 6));
 
 // belum selesai
