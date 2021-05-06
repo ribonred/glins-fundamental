@@ -14,27 +14,18 @@ const removeName = (name) => {
   return x;
 };
 console.log(removeName("Greg"));
-
-const removeName2 = (name) => {
-  const x = people.filter((xaxa) => xaxa !== name);
-  return x;
-};
 console.log(removeName("James"));
 
-const addName = (name) => {
-    // people.push(addName);
-    // console.log(addName("Matt"));
-    console.log([name, ...people]);
+const addName = (name,boolean) => {
+  if(boolean===1){
+    console.log([name,...people]);
+  }else{
+    console.log([...people,name]);
+  }
+    
   };
-addName("Matt");
-
-
-const addName2 = (name) => {
-  // people.push(addName);
-  // console.log(addName("Matt"));
-  console.log([people, ...name]);
-};
-addName("Nico");
+addName("Matt",1);
+addName("Nico",0);
 
 // stop when meet mary
 for (let i = 0; i < people.length; i++) {
@@ -44,10 +35,8 @@ for (let i = 0; i < people.length; i++) {
 
 //hapus Marry or Matt
 const arrSlice = () => {
-  const newArr = ["Greg", "Mary", "Devon", "James", "Matt"];
-  console.log(newArr.slice(0, 4));
+  console.log(people.slice(0, 4));
 };
-
 arrSlice();
 
 //location Marry
@@ -60,5 +49,6 @@ console.log(people.indexOf("foo"));
 const newArr = people.splice(2, 1, "Elizabeth", "Artie");
 console.log(people);
 
-
+let withBob = people.concat("Bob");
+console.log(withBob);
 
