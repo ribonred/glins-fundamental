@@ -10,7 +10,7 @@ for(let i =0; i< people.length; i++){
 }
 
 const removeName = (name) => {
-  const x = people.filter((xaxa) => xaxa !== name);
+  const x = people.filter((value) => value !== name);
   return x;
 };
 console.log(removeName("Greg"));
