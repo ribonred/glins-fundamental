@@ -24,10 +24,12 @@ function removePerson(name){
 //- Write the function to add "Matt" to the front of the array.
 function addPersonFront(name){
         people.unshift(name);
+        
 }
 //- Write the function to add your name to the end of the array.
 function addYourName(name){
         people.push(name);
+        console.log(people);
 }
 //- Write the function Using a loop, iterate through this array and
 // after console.log-ing "Mary", exit from the loop.
@@ -40,11 +42,17 @@ function loopExitByName(name){
 }
 // - Write the function to make a copy of the array using slice. 
 //The copy should NOT include "Mary" or "Matt".
-function arrSlice(){
-        const newArr = ["Greg", "Mary", "Devon", "James", "Matt"];
-        console.log(newArr.slice(0, 4));
-        
+
+function arrSlice(name){
+        const newArr = people;
+        for ( let i = 0; i<newArr.length;i++){
+                if (newArr[i]===name){
+                        console.log(newArr.slice(i+1, newArr.length));
+                }
+        }       
 }
+
+
 //Write the function that gives the indexOf where "Mary" is located.  
 //- Write the function that gives the indexOf where "Foo" is located 
 //(this should return -1).
