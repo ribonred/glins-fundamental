@@ -5,7 +5,7 @@ let namesAndHobbies = {
     'tim': "sailing"
 }
 
-export {namesAndHobbies}
+console.log(namesAndHobbies)
 
 // module.exports ={
 //     namesAndHobbies
