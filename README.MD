@@ -49,3 +49,10 @@ let namesAndHobbies = {
 Add a key for your name, and a value for your favorite hobby to the namesAndHobbies object.
 
 Write an if statement that console.logs your name and hobby to the console if the key of your name is contained in the object.
+
+////////////////////////////////////
+
+Kalau sudah push ke github
+push
+commit
+
