@@ -1,28 +1,11 @@
+let a = [1, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6];
+let b = [];
+let len = a.length;
 
-
-
-var hege = ["Cecilie", "Lone","Linus","totok"];
-var stale = ["Emil", "Tobias", "Linus"];
-
-function removeElement(array, elem) {
-    var index = array.indexOf(elem);
-    if (index > -1) {
-        return array.splice(0,index);
-    }else{
-        return new Array
+for (let i = 0; i < len; i++) {
+    if (b.indexOf(a[i]) === -1) {
+        b.push(a[i]);
     }
 }
 
-
-function arrayDiff(arrayA, ArrayB) {
-    for(var i=0;i<ArrayB.length;i++){
-       var result = removeElement(arrayA,ArrayB[i])
-      if(result.length > 0){
-          return result
-      }
-    }
-   
-    }
-   
-
-console.log(arrayDiff(hege,stale))
+console.log(b);
