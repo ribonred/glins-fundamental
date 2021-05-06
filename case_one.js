@@ -20,10 +20,12 @@ function removePerson(name){
                       let remove =  people.splice(i, 1)    
                 }          
         } 
+        console.log(people);
 }
 //- Write the function to add "Matt" to the front of the array.
 function addPersonFront(name){
         people.unshift(name);
+        console.log(people);
         
 }
 //- Write the function to add your name to the end of the array.
@@ -60,16 +62,9 @@ function arrSlice(name){
 function getIndex(name){
         console.log(people.indexOf(name));
 }
-//- Redefine the people variable with the value you started with. 
-//Using the splice function, remove "Devon" from the array and add "Elizabeth" and "Artie". 
-//Your array should look like this when you are done ["Greg", "Mary", "Elizabeth", "Artie", "James"].
-const newArr = people.splice(2, 1, "Elizabeth", "Artie");
-console.log(people);
-              
-//Create a new variable called withBob and set it equal to the people array concatenated with the string of "Bob".
-const withBob = [...people, "Bob"];
-console.log(withBob);
 
+
+cetakPerson();
 removePerson('Greg');
 removePerson('James');
 addPersonFront('Matt');
@@ -79,7 +74,17 @@ arrSlice('Matt');
 getIndex('Mary');
 getIndex('foo');
 
-//cetakPerson();
+//- Redefine the people variable with the value you started with. 
+//Using the splice function, remove "Devon" from the array and add "Elizabeth" and "Artie". 
+//Your array should look like this when you are done ["Greg", "Mary", "Elizabeth", "Artie", "James"].
+
+const newArr = people.splice(2, 1, "Elizabeth", "Artie");
+console.log(people);
+              
+//Create a new variable called withBob and set it equal to the people array concatenated with the string of "Bob".
+const withBob = [...people, "Bob"];
+console.log(withBob);
+
 
 
 
