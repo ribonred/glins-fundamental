@@ -11,12 +11,12 @@ const removeName = (name) => {
   return x;
 };
 
-console.log(removeName("James"));
+console.log(removeName("Greg"));
 
 // Add Matt to array
 const addName = (name) => {
-  people.push(name);
-  // console.log(hasil);
+  //   people.push(name);
+  //   // console.log(hasil);
   console.log([name, ...people]);
 };
 
@@ -46,9 +46,12 @@ const arrSlice = () => {
 arrSlice();
 
 // Write the function that gives the indexOf where "Mary" is located.
-console.log(people.indexOf("Mary"));
+const findIndex = (name) => {
+  console.log(people.indexOf(name));
+};
+findIndex("Mary");
 // Write the function that gives the indexOf where "Foo" is located (this should return -1).
-console.log(people.indexOf("foo"));
+findIndex("foo");
 
 // Redefine the people variable with the value you started with. Using the splice function, remove "Devon" from the array and add "Elizabeth" and "Artie". Your array should look like this when you are done ["Greg", "Mary", "Elizabeth", "Artie", "James"].
 
