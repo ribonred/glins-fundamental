@@ -44,10 +44,11 @@ function loopExitByName(name){
 //The copy should NOT include "Mary" or "Matt".
 
 function arrSlice(name){
-        const newArr = people;
+        let newArr = people;
         for ( let i = 0; i<newArr.length;i++){
                 if (newArr[i]===name){
-                        console.log(newArr.slice(i+1, newArr.length));
+                        newArr = newArr.slice(i+1, newArr.length)
+                        console.log(newArr);
                 }
         }       
 }
