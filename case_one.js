@@ -32,10 +32,14 @@ for (let i = 0; i < people.length; i++) {
 console.log(people);
 
 // stop when meet mary
-for (let i = 0; i < people.length; i++) {
-  console.log(people[i]);
-  if (people[i] == "Mary") break;
-}
+const stopMary = () => {
+  for (let i = 0; i < people.length; i++) {
+    console.log(people[i]);
+    if (people[i] == "Mary") break;
+  }
+};
+
+stopMary();
 
 // Write the function to make a copy of the array using slice. The copy should NOT include "Mary" or "Matt".
 const arrSlice = () => {
