@@ -1,104 +1,90 @@
-let people = ["Greg","Mary", "Devon", "James"] //  <= ini variabel
-// variabel people  menyimpan array
-// cara mengakses index di dalam array
-// tanda [] ini untuk memanggil index nomor berapa contoh  people[0] sama dengan Greg
+let people = ["Greg", "Mary", "Devon", "James"] //  <= ini variabel
 
 
-// kita mau loop yang ada di variable tersebut
-// for (var i = 0; i < people.length; i++) { // i itu sama dengan nol, jika i kurang dari panjang index array, i akan bertambah
-//         //console.log(people[i]) // yang aku print di terminal itu i
-//         if (people.length === 4) {
-//                 const removeGreg = () => {
-//                         people.shift()
-//                         return people
-//                 }
-//                 const removeJames = () => {
-//                         people.pop()
-//                         return people
-//                 }
-
-//                 console.log(removeGreg());
-//                 console.log(removeJames());
-//         } else if (people !== 4) {
-// const addMatt = () => {
-//         people.splice(0, 0, 'Matt')
-//         return people
-
-// }
-// const addMe = () => {
-//         people.splice(3, 0, 'elok')
-//         return people
-// }
-// console.log(addMatt());
-// console.log(addMe());
-//         }
-
-// }
-// console.log(people.length)
-
-// for (var i = 0; i < people.length; i++) { // i itu sama dengan nol, jika i kurang dari panjang index array, i akan bertambah
-//         // console.log(people[i]) // yang aku print di terminal itu i
-// const removeGreg = () => {
-//         people.shift()
-//         return people
-// }
-
-//         const removeJames = () => {
-//                 people.pop()
-//                 return people
-//         }
-
-//         const addMatt = () => {
-//                 people.splice(0, 0, 'Matt')
-//                 return people
-//         }
-
-//         const addMe = () => {
-//                 people.splice(3, 0, 'Elok')
-//                 return people
-//         }
-//         console.log(removeGreg(), '<-----Greg removed')
-//         console.log(removeJames(), '<-----James removed')
-//         console.log(addMatt(), '<-----Matt added')
-//         console.log(addMe(), '<-----Me added')
-// }
-
-// const allPeople = people.slice()
-// console.log(allPeople)
-
-// console.log(people.length)
-
-const allPeople = () => {
-        for (var i = 0; i < people.length; i++) {
-                console.log(people[i], '<-----initial case')
-        }
-       
-        const removeGreg = () => {
-                people.shift()
-                return people
-        }
-        const removeJames = () => {
-                people.pop()
-                return people
-        }
-
-        console.log(removeGreg());
-        console.log(removeJames());
-        
-  
-        const addMatt = () => {
-                people.splice(0, 0, 'Matt')
-                return people
-
-        }
-        const addMe = () => {
-                people.splice(3, 0, 'elok')
-                return people
-        }
-        console.log(addMatt());
-        console.log(addMe());
-        
-
-        
+for (var i = 0; i < people.length; i++) {
+        console.log(people[i], '<-----initial case')
 }
-allPeople()
+
+// const removeName = (name) => {
+//         const newArr = people.filter((rem) => rem !== name)
+//         return newArr
+// };
+// console.log(removeName('Greg'))
+// console.log(removeName('James'))
+
+
+const removeGreg = () => {
+        people.shift()
+        return people
+}
+const removeJames = () => {
+        people.pop()
+        return people
+}
+
+console.log(removeGreg());
+console.log(removeJames());
+
+
+const addMatt = () => {
+        people.splice(0, 0, 'Matt')
+        return people
+
+}
+const addMe = () => {
+        people.splice(3, 0, 'elok')
+        return people
+}
+console.log(addMatt());
+console.log(addMe());
+
+//stop when mary
+for (var i = 0; i < people.length; i++) {
+        console.log(people[i])
+        if (people[i] == "Mary") break
+}
+
+const arrSlice = (nama, a, b) => {
+        return nama.slice(a, b)
+}
+console.log(arrSlice(people, 2, 4))
+
+//location mary
+console.log(people.indexOf('Mary'), '<---location Mary')
+
+//location foo
+console.log(people.indexOf('Foo'), '<---location Foo')
+
+const getBack = () => {
+        people.splice(0, 1, 'Greg')
+        return people
+}
+console.log(getBack())
+
+people.splice(3, 1, 'James')
+console.log(people)
+
+const newArr3 = people.splice(2, 1, 'Elizabeth', 'Artie',)
+console.log(people)
+
+const withBob = people.concat('Bob')
+console.log(withBob)
+
+// const newArr2 = people.splice()
+
+
+
+
+// let fruits = ["Greg", "Mary", "Devon", "James"]
+
+// /**
+//  * Filter array items based on search criteria (query)
+//  */
+// function filterItems(arr, query) {
+//         return arr.filter(function (el) {
+//                 return el.toLowerCase().indexOf(query.toLowerCase()) !== -1
+//         })
+// }
+
+// console.log(filterItems(fruits, 'eg'))  // ['apple', 'grapes']
+// // console.log(filterItems(fruits, 'an'))  // ['banana', 'mango', 'orange']
