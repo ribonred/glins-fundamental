@@ -74,7 +74,7 @@ removePerson('James');
 addPersonFront('Matt');
 addYourName('Asdar');
 loopExitByName('Mary');
-arrSlice();
+arrSlice('Matt');
 getIndex('Mary');
 getIndex('foo');
 
