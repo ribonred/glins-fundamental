@@ -23,8 +23,8 @@ console.log(removeGregAndJames("Greg"));
 console.log(removeGregAndJames("James"));
 // Write the function to add "Matt" to the front of the array.
 // Write the function to add your name to the end of the array.
-const addName = (name, boolean) => {
-        if (boolean === 1) {
+const addName = (name, a) => {
+        if (a === 1) {
                 console.log([name, people]);
         } else {
                 console.log([people, name]);
