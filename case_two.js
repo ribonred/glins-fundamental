@@ -1,28 +1,12 @@
+// var a = [2, 3, 4, 5, 5, 4];
+// a.filter(function (value, index) { return a.indexOf(value) == index });
 
+// console.log(a)
 
+let names = ['Mike', 'Matt', 'Nancy', 'Adam', 'Jenny', 'Nancy', 'Carl', 'Nancy'];
 
-var hege = ["Cecilie", "Lone","Linus","totok"];
-var stale = ["Emil", "Tobias", "Linus"];
+let names2 = ['Matt', 'Shinoda', 'Shinoda', 'Chester',]
 
-function removeElement(array, elem) {
-    var index = array.indexOf(elem);
-    if (index > -1) {
-        return array.splice(0,index);
-    }else{
-        return new Array
-    }
-}
-
-
-function arrayDiff(arrayA, ArrayB) {
-    for(var i=0;i<ArrayB.length;i++){
-       var result = removeElement(arrayA,ArrayB[i])
-      if(result.length > 0){
-          return result
-      }
-    }
-   
-    }
-   
-
-console.log(arrayDiff(hege,stale))
+let dup = [...new Set(names)];
+let dup2 = [...new Set(names2)]
+console.log(dup, dup2);
