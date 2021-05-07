@@ -7,12 +7,12 @@ function cekDiff(array1,array2){
         for (let j=0; j<array2.length;j++){
            // console.log(array1[i],array2[j]);
             if (array1[i]===array2[j]){  
-               array1.splice(i,1,''); 
+              array1.splice(i,1,''); 
               //array1.splice(i,1); 
               // console.log(array1);
               // console.log(array1.filter(xxx => xxx !== array2[j]));
               // res.push(array[i])
-               //res = [...res, array[i]];  
+              //res = [...res, array[i]];  
         }
         }
     }
