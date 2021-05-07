@@ -1,11 +1,14 @@
-let a = [1, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6];
-let b = [];
-let len = a.length;
-
-for (let i = 0; i < len; i++) {
-    if (b.indexOf(a[i]) === -1) {
-        b.push(a[i]);
+const removeChar = (arr1, arr2) => {
+    let res = [];
+    for (let index = 0; index < arr2.length; index++) {
+        console.log(arr2[index]);
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr2[index] !== arr1[i]) {
+                res.push(arr1[i]);
+            }
+        }
     }
-}
-
-console.log(b);
+    console.log(res);
+    return res;
+};
+removeChar([2, 3, 4, 3, 3, 3, 1, 2], [2]);
