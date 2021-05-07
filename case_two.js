@@ -7,7 +7,8 @@ function cekDiff(array1,array2){
         for (let j=0; j<array2.length;j++){
            // console.log(array1[i],array2[j]);
             if (array1[i]===array2[j]){  
-                array1.splice(i,1,''); 
+               array1.splice(i,1,''); 
+              //array1.splice(i,1); 
               // console.log(array1);
               // console.log(array1.filter(xxx => xxx !== array2[j]));
               // res.push(array[i])
@@ -15,12 +16,12 @@ function cekDiff(array1,array2){
         }
         }
     }
-  // console.log(array1);
+  //console.log(array1); 
   //console.log(array1.filter(xx => xx !==''));
-   result = [...new Set(array1)];
+  result = [...new Set(array1)];
   // console.log(result);
-   result=(result.filter(xx =>xx !==''));
-   console.log(result);
+  result=(result.filter(xx =>xx !==''));
+  console.log(result);
 }
 
 cekDiff(hege,stale);
