@@ -18,32 +18,32 @@ let people = ['Greg', 'Mary', 'Devon', 'James'];
 
 
 
-// //Cara Kedua
+//Cara Kedua
 
-// const delFirstArr = (...a) => {
-//     const newArr =  a.filter(a => a.shift())
-//     console.log(newArr);
-// }
+const delFirstArr = (...a) => {
+    const newArr =  a.filter(a => a.shift())
+    console.log(newArr);
+}
 
-// delFirstArr(people);
+delFirstArr(people);
 
-// const delLastArr = (...a) => {
-//     const newArr =  a.filter(a => a.pop())
-//     console.log(newArr);
-// }
+const delLastArr = (...a) => {
+    const newArr =  a.filter(a => a.pop())
+    console.log(newArr);
+}
 
-// delLastArr(people);
-// // 
-// people.forEach(i => console.log(i));
+delLastArr(people);
+// 
+people.forEach(i => console.log(i));
 
 // // ///////////////////////////////////////////////////////////////////////////
 
-// // //Function to remove 'James' from the array
-// // console.log(people);
-// // const delArrLastEl = a => a.pop();
-// // delArrLastEl(people)
-// // console.log(people);
-// // for(let i of people) console.log(i);
+//Function to remove 'James' from the array
+console.log(people);
+const delArrLastEl = a => a.pop();
+delArrLastEl(people)
+console.log(people);
+for(let i of people) console.log(i);
 
 
 //Function to add 'Matt' to the front of array
@@ -63,11 +63,11 @@ addLastArr('Gio');
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// - Write the function Using a loop, iterate through this array and after console.log-ing "Mary", exit from the loop.
-// for(let i = 0; i < people.length; i++) {
-//         console.log(people[i]);
-//         if(people[i] === 'Mary') break;
-// }
+//Write the function Using a loop, iterate through this array and after console.log-ing "Mary", exit from the loop.
+for(let i = 0; i < people.length; i++) {
+        console.log(people[i]);
+        if(people[i] === 'Mary') break;
+}
 
 //Write the function to make a copy of the array using slice. The copy should NOT include "Mary" or "Matt".
 

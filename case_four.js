@@ -25,7 +25,7 @@ namesAndHobbies.hobby = 'Badminton';
 console.log(namesAndHobbies)
 
 if(namesAndHobbies.name === 'Rizki Giovanni' && namesAndHobbies.hobby === 'Badminton') {
-    console.log('Rizki Giovanni Hobby Badminton')
+    console.log(` ${namesAndHobbies.name} hobi bermain ${namesAndHobbies.hobby}`)
 } else {
     console.log('VALUE TIDAK DITEMUKAN')
 }
