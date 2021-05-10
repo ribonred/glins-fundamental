@@ -1,42 +1,7 @@
+const arrayDiff = (arr1, arr2) => {
+  const angka = arr2[0];
+  return arr1.filter((x) => x !== angka);
+};
 
-
-
-// var hege = ["Cecilie", "Lone","Linus","totok"];
-// var stale = ["Emil", "Tobias", "Linus"];
-
-// function removeElement(array, elem) {
-//     var index = array.indexOf(elem);
-//     if (index > -1) {
-//         return array.splice(0,index);
-//     }else{
-//         return new Array
-//     }
-// }
-
-
-// function arrayDiff(arrayA, ArrayB) {
-//     for(var i=0;i<ArrayB.length;i++){
-//        var result = removeElement(arrayA,ArrayB[i])
-//       if(result.length > 0){
-//           return result
-//       }
-//     }
-   
-//     }
-   
-
-// console.log(arrayDiff(hege,stale))
-
-let sebelum = [1, 2, 2, 2, 0, 3, 4, 5, 5, 0];
-let sesudah = [];
-
-for (let i = 0; i < sebelum.length; i++) {
-  console.log(i + 1);
-  if (sesudah.indexOf(sebelum[i]) == -1) {
-    sesudah.push(sebelum[i]);
-  } else {
-    console.log("test");
-  }
-}
-
-console.log(sesudah);
+console.log(arrayDiff([1, 2], [1]));
+console.log(arrayDiff([1, 2, 2, 2, 3], [2]));
