@@ -1,14 +1,8 @@
-const removeChar = (arr1, arr2) => {
-    let res = [];
-    for (let index = 0; index < arr2.length; index++) {
-        console.log(arr2[index]);
-        for (let i = 0; i < arr1.length; i++) {
-            if (arr2[index] !== arr1[i]) {
-                res.push(arr1[i]);
-            }
-        }
-    }
-    console.log(res);
-    return res;
+const arr1 = [1, 2, 3, 3, 2, 2, 4];
+const arr2 = [3, 2, 4];
+
+const checkData = () => {
+    return [...new Set(arr1.concat(arr2))];
 };
-removeChar([2, 3, 4, 3, 3, 3, 1, 2], [2]);
+
+console.log(checkData());
